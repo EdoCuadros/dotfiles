@@ -1,0 +1,93 @@
+configuration {
+    display-run:                   "Apps";
+    display-drun:                   "Apps";
+    display-window:                 "Window";
+    show-icons:true;
+    icon-theme:                     "McMojave-circle";
+}
+/* backg color0, text color15 */ 
+* {
+    lines: 10;
+    columns: 1;
+    background-color: #0e0014;
+    border-color: #0e0014;
+    text-color: #CAA9E0;
+    font: "Inconsolata Bold 15";
+}
+ 
+#window {
+    border: 0;
+    border-radius: 5px;
+    padding: 30;
+    width: 40%;
+    height: 40%;
+}
+ 
+#mainbox {
+    background-color: transparent;
+    children: [inputbar, listview];
+    spacing: 10px;
+    /*margin: 20%;*/
+    padding: 7px 0;
+    border: 1px;
+    border-color: transparent;
+}
+ 
+ 
+#listview {
+    background-color: transparent;
+    fixed-height: 0;
+    border: 0px;
+    spacing: 5px;
+    scrollbar: false;
+    padding: 10px 10px 10px;
+}
+ 
+#element {
+    background-color: transparent;
+    border: 3;
+    border-radius: 12px;
+    padding: 10 0 10 10 ;
+}
+
+/* backg color 3- text color0 */ 
+#element selected {
+    background-color: #a51b6d;
+    text-color: #a51b6d;
+}
+#element-text selected {
+    background-color: transparent;
+}
+
+#element-icon {
+    size: 24px;
+    margin: 0px 10px 0px 0px;
+    background-color: transparent;
+}
+
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    background-color: transparent;
+    text-color: #5e277f;
+}
+ 
+#case-indicator {
+    background-color: transparent;
+    spacing:    0;
+}
+#entry {
+    background-color: transparent;
+    spacing:    0;
+}
+#prompt {
+    background-color: transparent;
+    spacing:    0;
+}
+ 
+#textbox-prompt-colon {
+    background-color: transparent;
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+}
+

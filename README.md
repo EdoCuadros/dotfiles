@@ -1,1 +1,4 @@
-Repository for my own Arch Linux's dotfiles.
+# Dotfiles & Configs
+
+![Qtile](screenshots/desktop2.png)
+
